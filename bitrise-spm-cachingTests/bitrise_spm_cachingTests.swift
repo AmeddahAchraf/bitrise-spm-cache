@@ -4,7 +4,8 @@
 //
 //  Created by Achraf Ameddah on 13.10.21.
 //
-
+import Lottie
+import Charts
 import XCTest
 @testable import bitrise_spm_caching
 
