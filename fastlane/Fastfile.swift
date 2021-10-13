@@ -12,21 +12,6 @@ class Fastfile: LaneFile {
 	func customLane() {
 	desc("Description of what the lane does")
         let bundle = "a.bitrise-spm-caching"
-//		runTests(
-//            workspace: .userDefined(App.workspace),
-//            scheme: .userDefined(platform.scheme),
-//            devices: .userDefined([device.name]),
-//            clean: true,
-//            disableXcpretty: .userDefined(true),
-//            outputDirectory: Fastlane.tests,
-//            outputStyle: "raw",
-//            outputTypes: "",
-//            buildlogPath: Fastlane.logs,
-//            shouldZipBuildProducts: true,
-//            buildForTesting: .userDefined(true),
-//            configuration: .userDefined(configuration.name),
-//            xcargs: "-quiet",
-//            skipSlack: true
-//        )
+        runTests()
 	}
 }
