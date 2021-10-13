@@ -17,8 +17,8 @@
 		DE518D432716D03700438956 /* bitrise_spm_cachingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE518D422716D03700438956 /* bitrise_spm_cachingUITests.swift */; };
 		DE518D452716D03700438956 /* bitrise_spm_cachingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE518D442716D03700438956 /* bitrise_spm_cachingUITestsLaunchTests.swift */; };
 		DE991CFE271713C900E0FE7F /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = DE991CFD271713C900E0FE7F /* Charts */; };
-		DE991D00271713C900E0FE7F /* ChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DE991CFF271713C900E0FE7F /* ChartsDynamic */; };
 		DE991D03271713FD00E0FE7F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DE991D02271713FD00E0FE7F /* Lottie */; };
+		DE991D0727171B8C00E0FE7F /* fastlane in Resources */ = {isa = PBXBuildFile; fileRef = DE991D0627171B8C00E0FE7F /* fastlane */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +52,7 @@
 		DE518D3E2716D03700438956 /* bitrise-spm-cachingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "bitrise-spm-cachingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE518D422716D03700438956 /* bitrise_spm_cachingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitrise_spm_cachingUITests.swift; sourceTree = "<group>"; };
 		DE518D442716D03700438956 /* bitrise_spm_cachingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bitrise_spm_cachingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DE991D0627171B8C00E0FE7F /* fastlane */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fastlane; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE991CFE271713C900E0FE7F /* Charts in Frameworks */,
-				DE991D00271713C900E0FE7F /* ChartsDynamic in Frameworks */,
 				DE991D03271713FD00E0FE7F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +85,7 @@
 		DE518D152716D03500438956 = {
 			isa = PBXGroup;
 			children = (
+				DE991D0627171B8C00E0FE7F /* fastlane */,
 				DE518D202716D03500438956 /* bitrise-spm-caching */,
 				DE518D372716D03700438956 /* bitrise-spm-cachingTests */,
 				DE518D412716D03700438956 /* bitrise-spm-cachingUITests */,
@@ -151,7 +152,6 @@
 			name = "bitrise-spm-caching";
 			packageProductDependencies = (
 				DE991CFD271713C900E0FE7F /* Charts */,
-				DE991CFF271713C900E0FE7F /* ChartsDynamic */,
 				DE991D02271713FD00E0FE7F /* Lottie */,
 			);
 			productName = "bitrise-spm-caching";
@@ -248,6 +248,7 @@
 			files = (
 				DE518D2E2716D03700438956 /* LaunchScreen.storyboard in Resources */,
 				DE518D2B2716D03700438956 /* Assets.xcassets in Resources */,
+				DE991D0727171B8C00E0FE7F /* fastlane in Resources */,
 				DE518D292716D03500438956 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,11 +665,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DE991CFC271713C900E0FE7F /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
-		};
-		DE991CFF271713C900E0FE7F /* ChartsDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DE991CFC271713C900E0FE7F /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = ChartsDynamic;
 		};
 		DE991D02271713FD00E0FE7F /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
