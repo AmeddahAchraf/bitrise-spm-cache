@@ -16,6 +16,9 @@
 		DE518D392716D03700438956 /* bitrise_spm_cachingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE518D382716D03700438956 /* bitrise_spm_cachingTests.swift */; };
 		DE518D432716D03700438956 /* bitrise_spm_cachingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE518D422716D03700438956 /* bitrise_spm_cachingUITests.swift */; };
 		DE518D452716D03700438956 /* bitrise_spm_cachingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE518D442716D03700438956 /* bitrise_spm_cachingUITestsLaunchTests.swift */; };
+		DE991CFE271713C900E0FE7F /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = DE991CFD271713C900E0FE7F /* Charts */; };
+		DE991D00271713C900E0FE7F /* ChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = DE991CFF271713C900E0FE7F /* ChartsDynamic */; };
+		DE991D03271713FD00E0FE7F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DE991D02271713FD00E0FE7F /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE991CFE271713C900E0FE7F /* Charts in Frameworks */,
+				DE991D00271713C900E0FE7F /* ChartsDynamic in Frameworks */,
+				DE991D03271713FD00E0FE7F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +149,11 @@
 			dependencies = (
 			);
 			name = "bitrise-spm-caching";
+			packageProductDependencies = (
+				DE991CFD271713C900E0FE7F /* Charts */,
+				DE991CFF271713C900E0FE7F /* ChartsDynamic */,
+				DE991D02271713FD00E0FE7F /* Lottie */,
+			);
 			productName = "bitrise-spm-caching";
 			productReference = DE518D1E2716D03500438956 /* bitrise-spm-caching.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,10 @@
 				Base,
 			);
 			mainGroup = DE518D152716D03500438956;
+			packageReferences = (
+				DE991CFC271713C900E0FE7F /* XCRemoteSwiftPackageReference "Charts" */,
+				DE991D01271713FD00E0FE7F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = DE518D1F2716D03500438956 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -624,6 +639,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE991CFC271713C900E0FE7F /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DE991D01271713FD00E0FE7F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE991CFD271713C900E0FE7F /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE991CFC271713C900E0FE7F /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+		DE991CFF271713C900E0FE7F /* ChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE991CFC271713C900E0FE7F /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = ChartsDynamic;
+		};
+		DE991D02271713FD00E0FE7F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE991D01271713FD00E0FE7F /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE518D162716D03500438956 /* Project object */;
 }
