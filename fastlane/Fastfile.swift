@@ -21,6 +21,6 @@ class Fastfile: LaneFile {
 
     func customLane() {
         //clearDerivedData()
-        runTests()
+        runTests(clonedSourcePackagesPath: "SPM_checkouts")
     }
 }
