@@ -9,9 +9,18 @@
 import Foundation
 
 class Fastfile: LaneFile {
-	func customLane() {
-	desc("Description of what the lane does")
-        let bundle = "a.bitrise-spm-caching"
+    func clearDerivedData(derivedDataPath: String = "~/Library/Developer/Xcode/DerivedData") {
+        let derivedDataPathArg = RubyCommand.Argument(name: "derived_data_path", value: derivedDataPath, type: nil)
+        let array: [RubyCommand.Argument?] = [derivedDataPathArg]
+        let args: [RubyCommand.Argument] = array
+            .filter { $0?.value != nil }
+            .compactMap { $0 }
+        let command = RubyCommand(commandID: "", methodName: "clear_derived_data", className: nil, args: args)
+        _ = runner.executeCommand(command)
+    }
+
+    func customLane() {
+        //clearDerivedData()
         runTests()
-	}
+    }
 }
