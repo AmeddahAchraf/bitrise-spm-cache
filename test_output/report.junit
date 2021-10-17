@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='bitrise-spm-cachingTests.xctest' tests='1' failures='0'>
+  <testsuite name='bitrise_spm_cachingTests.bitrise_spm_cachingTests' tests='1' failures='0'>
+    <testcase classname='bitrise_spm_cachingTests.bitrise_spm_cachingTests' name='testExample' time='0.002'/>
+  </testsuite>
+</testsuites>
